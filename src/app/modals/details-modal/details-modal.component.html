@@ -1,42 +1,12 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-    Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+ <p (click)="action('close')">details modal</p>
+ <!--
+ <ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6">
-        <ion-card id="open-dialog">
-          <ion-img class="cardimg" src="assets/images/notes.jpg"></ion-img>
-            <ion-card-header>
-              <ion-card-title>PYQ</ion-card-title>
-            </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="6" (click)="onClick('notes')">
-        <ion-card id="open-d">
-            <ion-img src="assets/images/note-taking.png"></ion-img>
-            <ion-card-header>
-              <ion-card-title>Notes</ion-card-title>
-            </ion-card-header>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  <ion-modal id="detail-modal" #modal trigger="open-dialog">
-    <ng-template>
+   <ng-template>
       <div class="wrapper">
         <h1>Select Details</h1>
 
         <ion-list lines="none">
-          <!-- <ion-item button="true" detail="false" (click)="modal.dismiss()">
-            <ion-icon name="person-circle"></ion-icon>
-            <ion-label>Item 1</ion-label>
-          </ion-item> -->
           <ion-item>
             <ion-select interface="popover"  [(ngModel)]="userInfo.branch" placeholder="Select Branch">
               <ion-select-option value="CSE">CSE</ion-select-option>
@@ -62,14 +32,9 @@
               <ion-select-option value="Others">OTHERS</ion-select-option>
             </ion-select>
            </ion-item>
-           <ion-button (click)="submit()" expand="block" fill="clear" shape="round">
+           <ion-button (click)="action()" expand="block" fill="clear" shape="round">
             Submit
            </ion-button>
         </ion-list>
       </div>
-    </ng-template>
-  </ion-modal>
-  
-
-  
-</ion-content>
+    </ng-template>  -->

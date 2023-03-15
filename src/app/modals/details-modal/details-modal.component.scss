@@ -1,9 +1,4 @@
-.skeleton-image {
-  --background: rgba(109, 199, 67, 0.065);
-  --background-rgb: 188, 0, 255;
-}
-
-ion-modal#detail-modal {
+#detail-modal {
   --width: fit-content;
   --min-width: 250px;
   --height: fit-content;
@@ -26,7 +21,3 @@ ion-icon {
   margin-bottom: 10px;
 }
 }
-
-
-
-
